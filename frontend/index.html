@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Ask a question</h1>
+
+    <form id="chat-form" class="chat-form">
+      <textarea
+        id="message-input"
+        class="input"
+        rows="4"
+        placeholder="Type your message…"
+        required
+      ></textarea>
+      <button type="submit" class="btn" id="submit-btn">Send</button>
+    </form>
+
+    <div id="response-area" class="response-area" hidden>
+      <h2 class="response-label">Response</h2>
+      <p id="response-text" class="response-text"></p>
+    </div>
+
+    <div id="error-area" class="error-area" hidden>
+      <p id="error-text" class="error-text"></p>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
